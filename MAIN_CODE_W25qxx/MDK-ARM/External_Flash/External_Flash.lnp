@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"external_flash\startup_stm32f103xb.o"
+"external_flash\main.o"
+"external_flash\gpio.o"
+"external_flash\spi.o"
+"external_flash\tim.o"
+"external_flash\stm32f1xx_it.o"
+"external_flash\stm32f1xx_hal_msp.o"
+"external_flash\system_stm32f1xx.o"
+"external_flash\w25qxx.o"
+"external_flash\stm32f1xx_hal_gpio_ex.o"
+"external_flash\stm32f1xx_hal_spi.o"
+"external_flash\stm32f1xx_hal.o"
+"external_flash\stm32f1xx_hal_rcc.o"
+"external_flash\stm32f1xx_hal_rcc_ex.o"
+"external_flash\stm32f1xx_hal_gpio.o"
+"external_flash\stm32f1xx_hal_dma.o"
+"external_flash\stm32f1xx_hal_cortex.o"
+"external_flash\stm32f1xx_hal_pwr.o"
+"external_flash\stm32f1xx_hal_flash.o"
+"external_flash\stm32f1xx_hal_flash_ex.o"
+"external_flash\stm32f1xx_hal_exti.o"
+"external_flash\stm32f1xx_hal_tim.o"
+"external_flash\stm32f1xx_hal_tim_ex.o"
+--strict --scatter "External_Flash\External_Flash.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "External_Flash.map" -o External_Flash\External_Flash.axf
